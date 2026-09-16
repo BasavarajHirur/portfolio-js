@@ -26,6 +26,9 @@
       --teal: #67e8c9;
       --teal-dim: #4bb79e;
       --rose: #ef8b8b;
+      --pink: #ec10aa;
+      --green: #0c9246;
+      --cloud-blue: #42a3ed;
       --violet: #b39ce8;
       --indigo: #6b67e8;
       --radius: 10px;
@@ -897,6 +900,33 @@
       border-color: var(--teal);
     }
 
+    .chip.testing_quality {
+      color: var(--pink);
+      border-color: rgba(213, 9, 148, 0.3);
+    }
+
+    .chip.testing_quality:hover {
+      border-color: var(--pink);
+    }
+
+    .chip.code_quality {
+      color: var(--cloud-blue);
+      border-color: rgba(6, 122, 172, 0.3);
+    }
+
+    .chip.code_quality:hover {
+      border-color: var(--cloud-blue);
+    }
+
+    .chip.cicd_cloud {
+      color: var(--green);
+      border-color: rgba(3, 119, 47, 0.3);
+    }
+
+    .chip.cicd_cloud:hover {
+      border-color: var(--green);
+    }
+
     .chip.others {
       color: var(--violet);
       border-color: rgba(179, 156, 232, 0.3);
@@ -1231,6 +1261,18 @@
           <div class="chip-row" id="secondarySkills"></div>
         </div>
         <div class="skill-group reveal">
+          <h3>TESTING & QUALITY</h3>
+          <div class="chip-row" id="testing_quality"></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>CODE QUALITY & STANDARDS</h3>
+          <div class="chip-row" id="code_quality"></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>CI/CD & Cloud</h3>
+          <div class="chip-row" id="cicd_cloud"></div>
+        </div>
+        <div class="skill-group reveal">
           <h3>VERSION CONTROL &
             COLLABORATION </h3>
           <div class="chip-row" id="otherSkills"></div>
@@ -1316,8 +1358,8 @@
             title="LinkedIn">
             <img class="contact-icon" src="img/linkedin.png" alt="linkedin">
           </a>
-          <a class="contact-box" href="data/Basavaraja-Hiruru_Senior-Front-End-Developer.pdf" download="Basavaraja.Hiruru-Angular-Developer.pdf"
-            target="_blank" title="pdf">
+          <a class="contact-box" href="data/Basavaraja-Hiruru_Senior-Front-End-Developer.pdf"
+            download="Basavaraja.Hiruru-Angular-Developer.pdf" target="_blank" title="pdf">
             <img class="contact-icon" src="img/pdf-48.png" alt="pdf">
           </a>
         </div>
@@ -1362,16 +1404,16 @@
         duration: "Jul 2022 – Present · 4 yr 2 mo",
         location: "Bangalore, KA",
         duties: [
-          "Lead frontend development and technical direction for enterprise-scale workforce management applications on Infor OS, using Angular, TypeScript, REST APIs, HTML5, CSS3, and Infor OS IDM widgets.",
-          "Lead and mentor junior developers, conducting code reviews, resolving complex technical challenges, and establishing frontend coding standards and engineering best practices.",
-          "Architected and delivered 15+ reusable Angular components, services, and Reactive Forms, reducing code duplication and improving development consistency across application modules.",
-          "Led the AngularJS-to-Angular migration of 3 legacy modules, modernizing frontend architecture and improving maintainability, scalability, and performance.",
-          "Improved initial application load time by 30% through lazy loading, code splitting, RxJS optimization, and frontend memory-management techniques.",
-          "Designed and implemented JWT-based authentication and authorization for secure REST API integrations, including role-based access control across enterprise workflows.",
-          "Managed Git/GitHub branching workflows and Jenkins CI/CD pipelines, supporting automated builds, testing, and production deployments.",
-          "Collaborated with product, backend, QA, and cross-functional teams in Agile/Scrum environments to deliver features, resolve production issues, and support application releases.",
-          "Engaged directly with clients and stakeholders to clarify requirements, define scope, estimate story points, and translate business requirements into technical solutions.",
-          "Leveraged AI-assisted development tools, including GitHub Copilot and Cursor, for code generation, debugging, and unit-test development to improve engineering productivity.",
+          "Technical leadership: Lead frontend architecture and technical direction for enterprise-scale workforce-management applications on Infor OS, using Angular, TypeScript, REST APIs, HTML5, and CSS3.",
+          "People management: Lead and mentor a team of 4 junior developers, conducting code reviews, resolving complex technical issues, and establishing frontend coding standards and best practices.",
+          "Component architecture: Architected and delivered 15+ reusable Angular components, services, and Reactive Forms, reducing code duplication by an estimated 20% and improving consistency across modules.",
+          "Modernization: Led the AngularJS-to-Angular migration of 3 legacy modules, improving maintainability, scalability, and long-term performance.",
+          "Performance: Improved initial application load time by 30% through lazy loading, code splitting, RxJS optimization, and frontend memory-management techniques.",
+          "Security: Designed and implemented JWT-based authentication and authorization with role-based access control (RBAC) for secure REST API integrations across enterprise workflows.",
+          "DevOps: Managed Git/GitHub branching workflows and Jenkins CI/CD pipelines, supporting automated builds, testing, and production deployments.",
+          "Cross-functional delivery: Partnered with product, backend, and QA teams in Agile/Scrum ceremonies to ship features, triage production issues, and support releases.",
+          "Stakeholder management: Engaged directly with clients to clarify requirements, define scope, estimate story points, and translate business needs into technical solutions.",
+          "AI-assisted engineering: Adopted GitHub Copilot and Cursor for code generation, debugging, and unit-test development, improving engineering velocity."
 
         ],
         projects: [
@@ -1385,13 +1427,11 @@
         duration: "Apr 2021 – Jul 2022 · 1 yr 3 mo",
         location: "Bangalore, KA",
         duties: [
-          "Contributed to the design, development, and maintenance of an enterprise e-commerce web application using Angular, JavaScript, HTML5, CSS3, and Bootstrap.",
-          "Developed and implemented new features, reusable UI components, and responsive web pages to enhance the overall user experience.",
-          "Designed and implemented UI components such as breadcrumb navigation, product pages, and promotional campaign modules for seasonal events like New Year and Christmas.",
-          "Collaborated with UI/UX designers and backend developers to integrate RESTful APIs and deliver user-friendly, responsive interfaces.",
-          "Performed debugging, testing, and defect resolution during development and deployment, ensuring high application quality and smooth production releases.",
-          "Ensured clean, valid HTML and CSS markup in compliance with industry standards.",
-          "Optimized website performance by refactoring code and improving page load times, following HTML, CSS, and JavaScript best practices."
+          "Feature development: Built new features, reusable UI components, and responsive web pages for an enterprise ecommerce platform using Angular, JavaScript, HTML5, CSS3, and Bootstrap.",
+          "UI delivery: Developed breadcrumb navigation, product pages, and seasonal promotional-campaign modules (New Year, Christmas) supporting peak-traffic events.",
+          "API integration: Partnered with UI/UX designers and backend developers to integrate RESTful APIs and deliver responsive, user-friendly interfaces.",
+          "Quality: Performed debugging, testing, and defect resolution across development and deployment cycles, ensuring smooth production releases.",
+          "Performance: Improved page load times by refactoring code and applying HTML/CSS/JavaScript best practices."
         ],
         projects: [
           { name: "Makro", type: "E-Commerce (Netherlands)", desc: "Built campaign products, breadcrumbs and a one-step checkout for a major grocery & retail chain.", tech: ["Vue.js", "Commerce Tools", "SCSS"] },
@@ -1404,13 +1444,10 @@
         duration: "Oct 2018 – Apr 2021 · 2 yr 6 mo",
         location: "Bangalore, KA",
         duties: [
-          "Developed and maintained responsive web applications using HTML5, CSS3, JavaScript, and Vue.js, ensuring cross-browser compatibility and optimal user experience.",
-          "Designed and implemented reusable UI layouts, templates, and web pages based on business and design requirements.",
-          "Maintained and enhanced HTML/CSS templates by implementing UI improvements, bug fixes, and performance optimizations.",
-          "Collaborated with designers, backend developers, and QA teams to develop, test, and deploy new features following Agile methodologies.",
-          "Developed user interfaces for request creation and monitoring modules, ensuring responsive and intuitive application workflows.",
-          "Participated in daily Scrum meetings, resolved UI issues, and provided technical support during development and deployment activities.",
-          "Delivered user training and documentation for the Content Management System (CMS), enabling business users to manage website content independently. "
+          "Application development: Built and maintained responsive web applications using HTML5, CSS3, JavaScript, and Vue.js, ensuring cross-browser compatibility.",
+          "UI systems: Designed reusable UI layouts and templates based on business and design requirements, and enhanced them through ongoing bug fixes and performance tuning.",
+          "Feature delivery: Built user interfaces for request-creation and monitoring modules, ensuring responsive, intuitive workflows.",
+          "Enablement: Delivered end-user training and documentation for a Content Management System (CMS), enabling business users to manage content independently."
         ],
         projects: [
           { name: "LR Solutions", type: "Legal-Tech", desc: "Company registration and legal services platform — banners, nav and content management.", tech: ["Vue.js", "JavaScript", "HTML", "Firebase", "SCSS"] },
@@ -1424,10 +1461,8 @@
         duration: "May 2018 – June 2018",
         location: "Pune, MH",
         duties: [
-          "Completed comprehensive induction and technical training covering SDLC, SQL, HTML5, CSS3, JavaScript, Git, and Agile Scrum methodologies.",
-          "Gained practical knowledge of software engineering principles, coding standards, debugging techniques, and version control through handson exercises.",
-          "Assisted senior developers in understanding project workflows, application architecture, and frontend development practices",
-          "Participated in Agile ceremonies, including daily stand-ups, to understand collaborative development practices."
+          "Completed induction training covering the SDLC, SQL, HTML5, CSS3, JavaScript, Git, and Agile/Scrum methodologies.",
+          "Gained hands-on foundations in coding standards, debugging, and version control; supported senior developers on project workflows and frontend practices."
         ],
         projects: [
 
@@ -1436,11 +1471,14 @@
     ];
 
     const skills = {
-      primary: ["Angular", "TypeScript", "JavaScript", "HTML / HTML5", "CSS / CSS3", "SCSS", "Tailwind", "RxJS", "NgRx", "Vue.js"],
-      secondary: ["Node.js", "Express.js", "REST API", "MongoDB", "MySQL", "AWS", "XML", "XSLT", "Nginx", "Vercel", "Render", "Cloudflare"],
-      versionControl: ["Git", "GitHub", "Jira", "Figma"],
+      primary: ["Angular(v10+)", "TypeScript", "JavaScript(ES6+)", "HTML / HTML5", "CSS / CSS3", "SCSS", "Tailwind", "RxJS", "NgRx", "Vue.js"],
+      secondary: ["Node.js", "Express.js", "REST API", "MongoDB", "MySQL", "AWS", "XML", "XSLT"],
+      cicd_cloud: ['Git/GitHub', 'Jenkins', 'Docker', 'AWS EC2', 'nginx', 'Vercel', 'Render', 'Cloudflare'],
+      code_quality: ['SonarQube', 'ESLint', 'Prettier', 'Stylelint'],
+      testing_quality: ['Karma', 'Jasmin', 'playWright', 'Unit Testing/ Integration Testing', 'Cross-Browser Testing', 'Accessibility Testing'],
+      versionControl: ["GitHub", "Jira", "Figma"],
       devTools: ["VS Code", "Angular CLI", "Postman", "Chrome DevTools", "npm"],
-      ai: ["ChatGPT", "Claude", "Cursor"]
+      ai: ["ChatGPT", "Github Copilot", "Cursor"]
     };
 
     // ---------- render experience ----------
@@ -1504,6 +1542,9 @@
     renderChips('otherSkills', skills.versionControl, 'others');
     renderChips('dev-tools', skills.devTools, 'dev-tools');
     renderChips('ai', skills.ai, 'ai');
+    renderChips('cicd_cloud', skills.cicd_cloud, 'cicd_cloud');
+    renderChips('code_quality', skills.code_quality, 'code_quality');
+    renderChips('testing_quality', skills.testing_quality, 'testing_quality');
 
     // ---------- hero typing reveal ----------
     const lines = document.querySelectorAll('#typedLines .ln');
