@@ -1520,7 +1520,7 @@
       const toggleOpen = () => {
         const isOpen = card.classList.toggle('open');
         head.setAttribute('aria-expanded', isOpen);
-        body.style.maxHeight = isOpen ? body.scrollHeight + 'px' : '0px';
+        body.style.maxHeight = isOpen ? Math.max(body.scrollHeight, 2015) + 'px' : '0px';
       };
       head.addEventListener('click', toggleOpen);
       head.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleOpen(); } });
